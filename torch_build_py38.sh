@@ -1,3 +1,7 @@
+######################################
+# container
+# nvcr.io/nvidia/l4t-jetpack:r35.4.1
+######################################
 TORCH_VERSION=2.1.0
 
 ln -sf /usr/share/zoneinfo/Asia/Tokyo /etc/localtime
