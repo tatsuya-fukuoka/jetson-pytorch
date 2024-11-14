@@ -19,3 +19,9 @@ nvcr.io/nvidia/l4t-jetpack:r35.4.1
 chmod +x torch_build_py38.sh
 ./torch_build_py38.sh
 ```
+# Reference
+## pytorch
+https://pytorch.org/
+
+## nvidia forums
+https://forums.developer.nvidia.com/t/pytorch-for-jetson/72048
