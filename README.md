@@ -6,9 +6,10 @@ https://forums.developer.nvidia.com/t/pytorch-for-jetson/72048
 
 
 # Container
-```bash
-docker pull nvcr.io/nvidia/l4t-jetpack:r35.4.1
+Jetpack Container
 
+https://catalog.ngc.nvidia.com/orgs/nvidia/containers/l4t-jetpack
+```bash
 docker run -it --net=host --runtime nvidia --name torch_build \
 -v $(pwd):/workspace \
 nvcr.io/nvidia/l4t-jetpack:r35.4.1
