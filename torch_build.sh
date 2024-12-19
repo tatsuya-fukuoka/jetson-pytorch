@@ -1,8 +1,6 @@
-######################################
-# container
-# nvcr.io/nvidia/l4t-jetpack:r35.4.1
-######################################
 TORCH_VERSION=2.1.0
+# Jetson Orin Nano Compute Capability
+CUDA_ARCH="8.7"
 
 ln -sf /usr/share/zoneinfo/Asia/Tokyo /etc/localtime
 apt update && apt upgrade -y
@@ -24,7 +22,7 @@ export USE_NCCL=0 && \
 export USE_DISTRIBUTED=1 && \
 export USE_QNNPACK=0 && \
 export USE_PYTORCH_QNNPACK=0 && \
-export TORCH_CUDA_ARCH_LIST="8.7" && \
+export TORCH_CUDA_ARCH_LIST=$CUDA_ARCH && \
 export PYTORCH_BUILD_VERSION=$TORCH_VERSION && \
 export PYTORCH_BUILD_NUMBER=1 && \
 python3 setup.py bdist_wheel
