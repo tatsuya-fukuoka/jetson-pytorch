@@ -16,8 +16,8 @@ nvcr.io/nvidia/l4t-jetpack:r35.4.1
 
 # Build
 ```bash
-chmod +x torch_build_py38.sh
-./torch_build_py38.sh
+chmod +x torch_build.sh
+./torch_build.sh
 ```
 # Reference
 ## pytorch
